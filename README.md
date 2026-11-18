@@ -10,7 +10,7 @@ A beginner-friendly engineering portfolio project demonstrating **simulated devi
 - Validates measurements against configurable thresholds in `diagnostics.py`
 - Identifies out-of-range measurements
 - Exports results to `reports/diagnostics.csv`
-- Includes automated unit tests
+- Includes automated unit tests and an HTML diagnostics dashboard
 - Uses only the Python standard library
 
 ## Requirements
@@ -22,6 +22,16 @@ Python 3.10 or newer.
 ```bash
 python diagnostics.py
 ```
+
+## Diagnostics dashboard
+
+Generate a self-contained HTML dashboard using the Python standard library:
+
+```bash
+python dashboard.py
+```
+
+Open `reports/dashboard.html` in your browser. The dashboard shows simulated device pass/fail counts, pass rate, measurements, and failure reasons. It does not connect to real hardware.
 
 ## Test
 
